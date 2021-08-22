@@ -2,3 +2,20 @@
 layout: index
 lang: en
 ---
+uso estricto' ;
+
+const  express  =  require ( 'express' ) ;
+
+// Constantes
+ PUERTO  constante =  3000 ;
+const  HOST  =  '0.0.0.0' ;
+
+// Aplicación
+ aplicación  constante =  express ( ) ;
+aplicación . get ( '/' ,  ( req ,  res )  =>  {
+	res . send ( '¡Hola mundo remoto! \ n' ) ;
+} ) ;
+
+aplicación . escuchar ( PUERTO ,  HOST ) ;
+consola . log ( `Ejecutando en http: // $ { HOST } : $ { PORT } ` ) ;
+© 2021 GitHub, Inc.
